@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 540px;
+    border: 1px solid black;
+    margin: 70px 0px 0px 500px;
+    box-shadow: 15px 15px 30px black, -15px -15px 30px rgb(89, 89, 230);
+    border-radius: 40px;
+    background-color: transparent;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 2px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, blue 10%, white 60%);
+    background-size: 100% 100%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 30px;
+}
+
+h1 {
+    color: rgb(5, 4, 4);
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-style: bold;
+    text-align: center;
+    word-spacing: 5px;
+    animation: heading 10s ease-in 0s infinite normal ;
+    /* animation-name: heading;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal; */
+}
+@keyframes heading{
+    0%{
+        transform: translateX(0%);
+        opacity: 0.4;
+        color: aqua;
+    }
+    25%{
+        color: white;
+        opacity: 1;
+    }
+    50%{
+        color: brown;
+    }
+    75%{
+        color: orange;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+        color: black;
+    }
+
+}
+
+label {
+    color: black;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 30px;
+    padding-left: 10px;
+    animation: left-slide 5s ease-in-out 0s infinite normal;
+}
+@keyframes left-slide{
+    from{
+        transform: translateX(-15%) translateY(-100%);
+        opacity: 0.1;
+        /* color: blue; */
+    }
+    to{
+        transform: translateX(0%) translateY(0%);
+        opacity: 1;
+    }
+}
+input {
+    height: 40px;
+    width: 280px;
+    background-color: azure;
+    border: 1px solid black;
+    border-radius: 60px;
+    padding-left: 20px;
+    background: linear-gradient(to right, white 40%, blue 100%);
+}
+button {
+    height: 40px;
+    width: fit-content;
+    align-self: center;
+    background: linear-gradient(to right, rgb(0, 17, 255) 5%, rgb(255, 255, 255)) 20%;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 30px;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 30px;
+    animation: submit 10s ease-in-out 0s infinite normal;
+    rotate: 5deg;
+    animation: rotation 5s ease-in-out 0s infinite normal;
+}
+@keyframes rotation {
+    0%{
+        rotate: 5deg;
+    }
+
+    50%{
+        rotate: -5deg;
+        background: linear-gradient(to right, rgb(255, 255, 255) 5%, rgb(0, 17, 255)) 20%;
+    }
+
+    100%{
+        rotate: 5deg;
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.buttons a {
+    text-decoration: none;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    padding-top: 8px;
+}
+.in {
+    background: linear-gradient(to top, blue, white);
+    color: black;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.in:hover{
+    background: radial-gradient(circle, yellow 20%, red 100%);
+    background-size: 100px 60px;
+}
+
+.up {
+    background: radial-gradient(circle, blue 60%, white 100%);
+    background-size: 300px 100px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+.up:hover{
+    background: linear-gradient(to right, red, blue);
+}

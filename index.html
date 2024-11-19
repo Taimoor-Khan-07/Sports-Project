@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bd9fd7b14d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div class="hero">
+        <div class="hero-image">
+            <img src="https://sports.exampleofnature.com/wp-content/uploads/elementor/thumbs/download-13-qv00hd07c365tdr2nx9w87yqdv36spn6e3hh7wagds.jpeg" alt="Hero Image">
+        </div>
+        <div class="hero-text">
+            <h1>" SAEED SPORTS "</h1>
+            <p>Welcome to Saeed Sports – Where Passion Meets Performance! From high-quality tennis balls and coconut wood bats to durable gloves and bat covers, Saeed Sports is your ultimate destination for all things cricket. Whether you’re a weekend warrior or a pro player, we’ve got you covered. Explore our top-notch gear and get ready to level up your game.</p>
+            <a href="/our store.html">Products</a>
+        </div>
+    </div>
+
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
