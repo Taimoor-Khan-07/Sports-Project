@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    border: 5px solid black;
+    gap: 20px;
+}
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 500px;
+}
+.hero-image img {
+    height: 400px;
+    width: 480px;
+    border-radius: 12px;
+}
+.hero-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 500px;
+}
+.hero-text h1{
+    color: black;
+}
+
+
+
+
+/* Card container */
+.card-container {
+    perspective: 1000px; /* Enables the 3D effect */
+    width: 300px;
+    height: 200px;
+    margin: 50px auto;
+  }
+  
+  /* Card */
+  .card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d; /* Preserves 3D effect for child elements */
+    transition: transform 0.6s; /* Smooth flip animation */
+  }
+  
+  /* Card flip on hover */
+  .card-container:hover .card {
+    transform: rotateY(180deg); /* Flips the card on the Y-axis */
+  }
+  
+  /* Front and back faces of the card */
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hides the back face when not visible */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  /* Front face */
+  .card-front {
+    background: #3498db;
+  }
+  
+  /* Back face */
+  .card-back {
+    background: #2ecc71;
+    transform: rotateY(180deg); /* Initial back face positioning */
+  }
+  
